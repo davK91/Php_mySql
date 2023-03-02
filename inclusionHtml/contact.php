@@ -7,13 +7,14 @@
 
 <form action="process_contact.php" method="post">
     <label for="firstname">Prénom :</label>
-    <input type="text" id="firstname" name="firstname" required>
+    <input type="text" id="firstname" name="firstname" required> <br>
 
     <label for="lastname">Nom :</label>
-    <input type="text" id="lastname" name="lastname" required>
+    <input type="text" id="lastname" name="lastname" required> <br>
 
     <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required> <br>
+
 
     <label for="subject">Sujet :</label>
     <input type="text" id="subject" name="subject" required>

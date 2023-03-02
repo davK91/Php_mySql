@@ -25,18 +25,6 @@
     <button type="submit" name="submit">Envoyer</button>
 </form>
 
-<?php
-    if (isset($_POST['submit'])) {
-    // Le formulaire a été soumis, traiter les données ici
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-    // Faire quelque chose avec les données (envoyer un email, les enregistrer dans une base de données, etc.)
-    }
-?>
 
 
 <?php 

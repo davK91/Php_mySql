@@ -1,4 +1,13 @@
 <?php
+
+    require_once "_inc/functions.php";
+
+    verifForm();
+
+    require_once "_inc/header.php";
+    require_once "_inc/nav.php";
+
+
 if (isset($_POST['submit'])) {
     // Le formulaire a été soumis, traiter les données ici
     $firstname = $_POST['firstname'];

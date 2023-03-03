@@ -10,7 +10,7 @@ $id = $_GET['id'];
 
 // Récupération des informations du jeu vidéo en utilisant son identifiant
 $video_game_info = get_game_by_id($id);
-// var_dump($video_game_info);
+
 
 
 ?>

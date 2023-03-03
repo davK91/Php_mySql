@@ -17,7 +17,6 @@ $video_game_info = get_game_by_id($id);
 
 <div>
   <h1><?php echo $video_game_info['title']; ?></h1>
-  <!-- <p>Genre: <?php // echo $video_game_info['genre']; ?></p> -->
   <p>Date de sortie: <?php echo date_format(new DateTime($video_game_info['release_date']), 'd/m/Y'); ?></p>
   <p>Description: <?php echo $video_game_info['description']; ?></p>
 </div>

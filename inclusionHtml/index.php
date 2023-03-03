@@ -10,17 +10,29 @@
     $random_games = get_random_games(3);
 
 ?>
-    <h1>Home</h1>
+    <div class="container mt-4">
 
-    <div class="games-container">
-  <?php foreach ($random_games as $game): ?>
-    <div class="game">
-      <h2><?php echo $game['title']; ?></h2>
-      <img src="<?php echo $game['image_url']; ?>" alt="<?php echo $game['title']; ?>">
-      <p>Prix : <?php echo $game['price']; ?> €</p>
-      <a href="game.php?id=<?php echo $game['id']; ?>" class="button">Consulter</a>
-    </div>
-  <?php endforeach; ?>
+<h1 class="text-center mb-4">Accueil</h1>
+
+<div class="row">
+
+    <?php foreach ($random_games as $game): ?>
+
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="<?php echo $game['image_url']; ?>" alt="<?php echo $game['title']; ?>" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $game['title']; ?></h5>
+                    <p class="card-text">Prix : <?php echo $game['price']; ?> €</p>
+                    <a href="game.php?id=<?php echo $game['id']; ?>" class="btn btn-primary">Consulter</a>
+                </div>
+            </div>
+        </div>
+
+    <?php endforeach; ?>
+
+</div>
+
 </div>
 
 <?php 
